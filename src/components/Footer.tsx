@@ -12,8 +12,8 @@ const Footer = () => {
             {/* Brand */}
             <div className="lg:col-span-2">
               <div className="flex items-center gap-3 mb-6">
-                <div className="w-12 h-12 rounded-xl bg-gradient-accent flex items-center justify-center">
-                  <span className="text-primary-foreground font-bold text-xl">R</span>
+                <div className="w-20 h-20 flex items-center justify-center">
+                  <img src="/logo.png" alt="RESTCAR Logo" className="w-full h-full object-contain" />
                 </div>
                 <div>
                   <span className="font-display text-xl font-bold text-foreground block">
@@ -25,7 +25,7 @@ const Footer = () => {
                 </div>
               </div>
               <p className="text-muted-foreground max-w-md mb-6">
-                Soluções jurídicas especializadas em recuperação veicular. 
+                Soluções jurídicas especializadas em recuperação veicular.
                 Atuação exclusivamente judicial com foco em segurança e legalidade.
               </p>
               <div className="flex items-center gap-4">
@@ -101,8 +101,8 @@ const Footer = () => {
               <div>
                 <h5 className="font-semibold text-foreground mb-2">Aviso Legal</h5>
                 <p className="text-sm text-muted-foreground">
-                  A RESTCAR não realiza serviços de despachante, nem liberações 
-                  administrativas por débitos. Nossa atuação é exclusivamente 
+                  A RESTCAR não realiza serviços de despachante, nem liberações
+                  administrativas por débitos. Nossa atuação é exclusivamente
                   jurídica, focada em processos judiciais de restituição veicular.
                 </p>
               </div>

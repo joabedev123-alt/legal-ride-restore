@@ -11,15 +11,15 @@ const Header = () => {
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
-      
+
       setIsScrolled(currentScrollY > 50);
-      
+
       if (currentScrollY > lastScrollY && currentScrollY > 100) {
         setIsVisible(false);
       } else {
         setIsVisible(true);
       }
-      
+
       setLastScrollY(currentScrollY);
     };
 
@@ -45,24 +45,22 @@ const Header = () => {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isVisible ? 'translate-y-0' : '-translate-y-full'
-      } ${
-        isScrolled
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isVisible ? 'translate-y-0' : '-translate-y-full'
+        } ${isScrolled
           ? 'glass-card border-b border-border/50'
           : 'bg-transparent'
-      }`}
+        }`}
     >
       <div className="container mx-auto px-4 lg:px-8">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <a 
-            href="#inicio" 
+          <a
+            href="#inicio"
             onClick={(e) => { e.preventDefault(); scrollToSection('#inicio'); }}
             className="flex items-center gap-3 group"
           >
-            <div className="w-10 h-10 rounded-lg bg-gradient-accent flex items-center justify-center">
-              <span className="text-primary-foreground font-bold text-lg">R</span>
+            <div className="w-14 h-14 md:w-20 md:h-20 flex items-center justify-center">
+              <img src="/logo.png" alt="RESTCAR Logo" className="w-full h-full object-contain" />
             </div>
             <div className="flex flex-col">
               <span className="font-display text-lg font-bold text-foreground tracking-wide">
@@ -120,9 +118,8 @@ const Header = () => {
 
       {/* Mobile Menu */}
       <div
-        className={`lg:hidden absolute top-full left-0 right-0 glass-card border-t border-border/50 transition-all duration-300 ${
-          isMobileMenuOpen ? 'opacity-100 visible' : 'opacity-0 invisible'
-        }`}
+        className={`lg:hidden absolute top-full left-0 right-0 glass-card border-t border-border/50 transition-all duration-300 ${isMobileMenuOpen ? 'opacity-100 visible' : 'opacity-0 invisible'
+          }`}
       >
         <nav className="container mx-auto px-4 py-6 flex flex-col gap-4">
           {navItems.map((item) => (
