@@ -5,6 +5,7 @@ import ServicesSection from '@/components/ServicesSection';
 import HowItWorksSection from '@/components/HowItWorksSection';
 import WhyChooseSection from '@/components/WhyChooseSection';
 import ContactSection from '@/components/ContactSection';
+import WhatsAppGallerySection from '@/components/WhatsAppGallerySection';
 import Footer from '@/components/Footer';
 import FloatingWhatsAppButton from '@/components/FloatingWhatsAppButton';
 
@@ -19,6 +20,7 @@ const Index = () => {
         <HowItWorksSection />
         <WhyChooseSection />
         <ContactSection />
+        <WhatsAppGallerySection />
       </main>
       <Footer />
       <FloatingWhatsAppButton />
