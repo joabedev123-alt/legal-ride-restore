@@ -58,7 +58,7 @@ const AboutSection = () => {
 
               <p className="text-lg text-muted-foreground leading-relaxed">
                 A <span className="text-foreground font-semibold">RESTCAR</span> atua de forma
-                especializada na restituição de veículos apreendidos em processos judiciais,
+                especializada na restituição de veículos Apreendidos em delegacias e processos judiciais,
                 com foco em apreensões criminais. Nosso trabalho é técnico, jurídico e
                 estratégico, respeitando rigorosamente a legalidade e a segurança do cliente.
               </p>
