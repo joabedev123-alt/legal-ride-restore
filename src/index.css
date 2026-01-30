@@ -143,7 +143,14 @@
   }
 
   .section-padding {
-    @apply py-20 md:py-28 lg:py-32;
+    @apply py-12 md:py-20 lg:py-28 xl:py-32;
+  }
+
+  /* Mobile Optimizations */
+  @media (max-width: 768px) {
+    .glass-card {
+      backdrop-filter: blur(10px);
+    }
   }
 }
 
