@@ -45,7 +45,7 @@ const Header = () => {
 
   return (
     <header
-      className="fixed top-0 left-0 right-0 z-50 transition-all duration-300 translate-y-0 glass-card border-b border-border/50"
+      className="fixed top-0 left-0 right-0 z-50 transition-all duration-300 translate-y-0 bg-[#E0F2FE] border-b border-white/50"
     >
       <div className="container mx-auto px-4 lg:px-8">
         <div className="flex items-center justify-between h-32 md:h-48">
@@ -59,10 +59,10 @@ const Header = () => {
               <img src="/logo.png" alt="RESTCAR Logo" className="w-full h-full object-contain" />
             </div>
             <div className="flex flex-col">
-              <span className="font-display text-lg font-bold text-foreground tracking-wide">
+              <span className="font-sans text-lg font-bold text-foreground tracking-wide">
                 RESTCAR
               </span>
-              <span className="text-[10px] text-muted-foreground uppercase tracking-widest">
+              <span className="text-[10px] text-muted-foreground uppercase tracking-widest font-sans">
                 Apreensões Judiciais
               </span>
             </div>
@@ -75,7 +75,7 @@ const Header = () => {
                 key={item.label}
                 href={item.href}
                 onClick={(e) => { e.preventDefault(); scrollToSection(item.href); }}
-                className="text-sm text-muted-foreground hover:text-foreground transition-colors duration-200 relative group"
+                className="text-sm font-sans font-bold text-foreground/80 hover:text-foreground transition-colors duration-200 relative group"
               >
                 {item.label}
                 <span className="absolute -bottom-1 left-0 w-0 h-px bg-primary transition-all duration-300 group-hover:w-full" />
