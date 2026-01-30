@@ -45,21 +45,17 @@ const Header = () => {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isVisible ? 'translate-y-0' : '-translate-y-full'
-        } ${isScrolled
-          ? 'glass-card border-b border-border/50'
-          : 'bg-transparent'
-        }`}
+      className="fixed top-0 left-0 right-0 z-50 transition-all duration-300 translate-y-0 glass-card border-b border-border/50"
     >
       <div className="container mx-auto px-4 lg:px-8">
-        <div className="flex items-center justify-between h-24 md:h-32">
+        <div className="flex items-center justify-between h-32 md:h-48">
           {/* Logo */}
           <a
             href="#inicio"
             onClick={(e) => { e.preventDefault(); scrollToSection('#inicio'); }}
             className="flex items-center gap-3 group"
           >
-            <div className="w-20 h-20 md:w-32 md:h-32 flex items-center justify-center">
+            <div className="w-32 h-32 md:w-48 md:h-48 flex items-center justify-center">
               <img src="/logo.png" alt="RESTCAR Logo" className="w-full h-full object-contain" />
             </div>
             <div className="flex flex-col">
