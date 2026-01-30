@@ -47,12 +47,6 @@ const HeroSection = () => {
       {/* Content */}
       <div className="container mx-auto px-4 lg:px-8 relative z-10 pt-24">
         <div className="max-w-5xl mx-auto text-center">
-          {/* Badge */}
-          <div className="inline-flex items-center gap-2 px-4 py-2 glass-card rounded-full mb-8 opacity-0 animate-fade-up">
-            <ShieldCheck className="w-4 h-4 text-primary" />
-            <span className="text-sm text-muted-foreground">Soluções Jurídicas Especializadas</span>
-          </div>
-
           {/* Headline */}
           <h1 className="font-display text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-6 opacity-0 animate-fade-up delay-100">
             <span className="text-foreground">Especialistas em </span>
