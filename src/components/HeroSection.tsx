@@ -45,7 +45,7 @@ const HeroSection = () => {
       <div className="absolute bottom-1/4 right-1/4 w-80 h-80 bg-accent/10 rounded-full blur-3xl" />
 
       {/* Content */}
-      <div className="container mx-auto px-4 lg:px-8 relative z-10 pt-40 md:pt-56 pb-24">
+      <div className="container mx-auto px-4 lg:px-8 relative z-10 pt-32 md:pt-56 pb-24">
         <div className="max-w-5xl mx-auto text-center">
           {/* Headline */}
           <h1 className="font-display text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-6 opacity-0 animate-fade-up delay-100">

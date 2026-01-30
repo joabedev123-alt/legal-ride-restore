@@ -75,7 +75,7 @@ const AboutSection = () => {
                     className="text-center p-4 glass-card rounded-xl"
                     style={{ animationDelay: `${index * 0.1}s` }}
                   >
-                    <div className="text-2xl md:text-3xl font-bold text-primary mb-1">
+                    <div className="text-xl md:text-3xl font-bold text-primary mb-1">
                       {stat.number}
                     </div>
                     <div className="text-xs text-muted-foreground uppercase tracking-wider">
