@@ -12,14 +12,14 @@ const Header = () => {
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
 
-      setIsScrolled(currentScrollY > 50);
-
-      if (currentScrollY > lastScrollY && currentScrollY > 100) {
-        setIsVisible(false);
-      } else {
+      // Show only when at the top (or very close to it)
+      if (currentScrollY < 50) {
         setIsVisible(true);
+      } else {
+        setIsVisible(false);
       }
 
+      setIsScrolled(currentScrollY > 50);
       setLastScrollY(currentScrollY);
     };
 
@@ -45,7 +45,7 @@ const Header = () => {
 
   return (
     <header
-      className="fixed top-0 left-0 right-0 z-50 transition-all duration-300 translate-y-0 bg-[#1677D8] border-b border-white/10"
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isVisible ? 'translate-y-0' : '-translate-y-full'} bg-[#1677D8] border-b border-white/10`}
     >
       <div className="container mx-auto px-4 lg:px-8">
         <div className="flex items-center justify-between h-32 md:h-48">
