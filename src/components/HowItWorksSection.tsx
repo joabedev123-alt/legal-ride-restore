@@ -54,8 +54,8 @@ const HowItWorksSection = () => {
     {
       number: '04',
       icon: Gavel,
-      title: 'Atuação Judicial',
-      description: 'Entramos com as ações necessárias perante o judiciário.',
+      title: 'Atuação Judicial ou Extrajudicial',
+      description: 'Ações necessárias perante o judiciário ou delegacias.',
     },
     {
       number: '05',
@@ -66,14 +66,14 @@ const HowItWorksSection = () => {
   ];
 
   return (
-    <section 
+    <section
       ref={sectionRef}
-      id="como-funciona" 
+      id="como-funciona"
       className="section-padding relative overflow-hidden"
     >
       {/* Background */}
       <div className="absolute inset-0 bg-gradient-to-b from-background via-navy-dark to-background" />
-      
+
       {/* Decorative Lines */}
       <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-border to-transparent" />
 
@@ -89,7 +89,7 @@ const HowItWorksSection = () => {
               <span className="block gradient-text">Simplificado</span>
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Nosso processo é transparente e eficiente, garantindo que você 
+              Nosso processo é transparente e eficiente, garantindo que você
               acompanhe cada etapa da restituição.
             </p>
           </div>
@@ -98,7 +98,7 @@ const HowItWorksSection = () => {
           <div className="relative">
             {/* Connection Line - Desktop */}
             <div className="hidden lg:block absolute top-[60px] left-0 right-0 h-0.5 bg-border">
-              <div 
+              <div
                 className="h-full bg-gradient-accent transition-all duration-500"
                 style={{ width: `${(activeStep / 4) * 100}%` }}
               />
@@ -113,34 +113,30 @@ const HowItWorksSection = () => {
                   style={{ animationDelay: `${0.1 + index * 0.1}s` }}
                 >
                   {/* Step Content */}
-                  <div 
-                    className={`text-center transition-all duration-500 ${
-                      activeStep === index ? 'scale-105' : ''
-                    }`}
+                  <div
+                    className={`text-center transition-all duration-500 ${activeStep === index ? 'scale-105' : ''
+                      }`}
                   >
                     {/* Circle */}
                     <div className="relative inline-flex mb-6">
-                      <div 
-                        className={`w-[120px] h-[120px] rounded-full flex items-center justify-center transition-all duration-500 ${
-                          activeStep === index 
-                            ? 'bg-gradient-accent shadow-glow' 
+                      <div
+                        className={`w-[120px] h-[120px] rounded-full flex items-center justify-center transition-all duration-500 ${activeStep === index
+                            ? 'bg-gradient-accent shadow-glow'
                             : 'glass-card'
-                        }`}
+                          }`}
                       >
-                        <step.icon 
-                          className={`w-10 h-10 transition-colors duration-300 ${
-                            activeStep === index ? 'text-primary-foreground' : 'text-primary'
-                          }`} 
+                        <step.icon
+                          className={`w-10 h-10 transition-colors duration-300 ${activeStep === index ? 'text-primary-foreground' : 'text-primary'
+                            }`}
                         />
                       </div>
-                      
+
                       {/* Number Badge */}
-                      <div 
-                        className={`absolute -top-2 -right-2 w-10 h-10 rounded-full flex items-center justify-center text-sm font-bold transition-all duration-300 ${
-                          activeStep === index 
-                            ? 'bg-primary text-primary-foreground' 
+                      <div
+                        className={`absolute -top-2 -right-2 w-10 h-10 rounded-full flex items-center justify-center text-sm font-bold transition-all duration-300 ${activeStep === index
+                            ? 'bg-primary text-primary-foreground'
                             : 'bg-secondary text-muted-foreground'
-                        }`}
+                          }`}
                       >
                         {step.number}
                       </div>
@@ -171,9 +167,8 @@ const HowItWorksSection = () => {
                 <button
                   key={index}
                   onClick={() => setActiveStep(index)}
-                  className={`w-3 h-3 rounded-full transition-all duration-300 ${
-                    activeStep === index ? 'bg-primary w-8' : 'bg-border'
-                  }`}
+                  className={`w-3 h-3 rounded-full transition-all duration-300 ${activeStep === index ? 'bg-primary w-8' : 'bg-border'
+                    }`}
                 />
               ))}
             </div>
