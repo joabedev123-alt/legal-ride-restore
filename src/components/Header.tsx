@@ -58,14 +58,6 @@ const Header = () => {
             <div className="w-32 h-32 md:w-48 md:h-48 flex items-center justify-center">
               <img src="/logo.png" alt="RESTCAR Logo" className="w-full h-full object-contain" />
             </div>
-            <div className="flex flex-col">
-              <span className="font-sans text-lg font-bold text-foreground tracking-wide">
-                RESTCAR
-              </span>
-              <span className="text-[10px] text-muted-foreground uppercase tracking-widest font-sans">
-                Apreensões Judiciais
-              </span>
-            </div>
           </a>
 
           {/* Desktop Navigation */}
