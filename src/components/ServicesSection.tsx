@@ -35,43 +35,43 @@ const ServicesSection = () => {
       icon: Building2,
       title: 'Liberação em Delegacias',
       description: 'Agilizamos a retirada de veículos apreendidos, conforme autorização judicial.',
-      message: 'Olá, gostaria de saber mais sobre Liberação em Delegacias.',
+      message: 'Gostaria de saber mais sobre - Liberação em Delegacias',
     },
     {
       icon: Scale,
       title: 'Ações Judiciais',
       description: 'Atuação jurídica para restituição mediante decisão judicial.',
-      message: 'Olá, gostaria de saber mais sobre Ações Judiciais.',
+      message: 'Gostaria de saber mais sobre - Ações Judiciais',
     },
     {
       icon: KeyRound,
       title: 'Reintegração de Posse',
       description: 'Recuperação do veículo com segurança, legalidade e eficiência.',
-      message: 'Olá, gostaria de saber mais sobre Reintegração de Posse.',
+      message: 'Gostaria de saber mais sobre - Reintegração de Posse',
     },
     {
       icon: Warehouse,
       title: 'Liberação em Pátios',
       description: 'Procedimentos administrativos e jurídicos para liberação de veículos em pátios.',
-      message: 'Olá, gostaria de saber mais sobre Liberação em Pátios.',
+      message: 'Gostaria de saber mais sobre - Liberação em Pátios',
     },
     {
       icon: Headphones,
       title: 'Assessoria Jurídica e Operacional',
       description: 'Evitamos perdas de tempo, desgaste emocional e erros processuais.',
-      message: 'Olá, gostaria de saber mais sobre Assessoria Jurídica e Operacional.',
+      message: 'Gostaria de saber mais sobre - Assessoria Jurídica e Operacional',
     },
     {
       icon: MapPin,
       title: 'Localização de Veículos',
       description: 'Serviço especializado de busca e localização veicular.',
-      message: 'Olá, gostaria de saber mais sobre Localização de Veículos.',
+      message: 'Gostaria de saber mais sobre - Localização de Veículos',
     },
     {
       icon: Bike,
       title: 'Motos Apreendidas pela Polícia',
       description: 'Atuação específica para restituição de motocicletas apreendidas.',
-      message: 'Olá, gostaria de saber mais sobre Motos Apreendidas pela Polícia.',
+      message: 'Gostaria de saber mais sobre - Motos Apreendidas pela Polícia',
     },
   ];
 
@@ -109,12 +109,10 @@ const ServicesSection = () => {
             {services.map((service, index) => (
               <div
                 key={service.title}
-                className={`group relative glass-card p-8 rounded-2xl transition-all duration-500 hover:-translate-y-2 glow-border flex flex-col ${isVisible ? 'animate-fade-up' : 'opacity-0'
-                  }`}
-                style={{ animationDelay: `${0.1 + index * 0.1}s` }}
+                className="relative glass-card p-8 rounded-2xl flex flex-col"
               >
                 {/* Icon */}
-                <div className="w-14 h-14 rounded-xl bg-gradient-accent flex items-center justify-center mb-6 transition-transform duration-300 group-hover:scale-110">
+                <div className="w-14 h-14 rounded-xl bg-gradient-accent flex items-center justify-center mb-6">
                   <service.icon className="w-7 h-7 text-primary-foreground" />
                 </div>
 
@@ -138,9 +136,6 @@ const ServicesSection = () => {
                   </svg>
                   <span className="text-sm">Fale com um Especialista</span>
                 </a>
-
-                {/* Hover Gradient */}
-                <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
               </div>
             ))}
           </div>
