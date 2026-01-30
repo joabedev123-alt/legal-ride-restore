@@ -52,14 +52,14 @@ const Header = () => {
         }`}
     >
       <div className="container mx-auto px-4 lg:px-8">
-        <div className="flex items-center justify-between h-20">
+        <div className="flex items-center justify-between h-24 md:h-32">
           {/* Logo */}
           <a
             href="#inicio"
             onClick={(e) => { e.preventDefault(); scrollToSection('#inicio'); }}
             className="flex items-center gap-3 group"
           >
-            <div className="w-14 h-14 md:w-20 md:h-20 flex items-center justify-center">
+            <div className="w-20 h-20 md:w-32 md:h-32 flex items-center justify-center">
               <img src="/logo.png" alt="RESTCAR Logo" className="w-full h-full object-contain" />
             </div>
             <div className="flex flex-col">
