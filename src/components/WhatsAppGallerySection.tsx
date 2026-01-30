@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react';
-import img1 from '../assets/WhatsApp Image 2026-01-30 at 16.25.17.jpeg';
-import img2 from '../assets/WhatsApp Image 2026-01-30 at 16.26.27.jpeg';
-import img3 from '../assets/WhatsApp Image 2026-01-30 at 16.36.17.jpeg';
-import img4 from '../assets/WhatsApp Image 2026-01-30 at 16.36.34.jpeg';
+import img1 from '../assets/whatsapp-image-1-blurred.png';
+import img2 from '../assets/whatsapp-image-2-blurred.png';
+import img3 from '../assets/whatsapp-image-3-blurred.png';
+import img4 from '../assets/whatsapp-image-4-blurred.png';
 
 const WhatsAppGallerySection = () => {
     const images = [img1, img2, img3, img4];
