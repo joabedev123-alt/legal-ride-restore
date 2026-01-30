@@ -29,14 +29,14 @@ const AboutSection = () => {
   ];
 
   return (
-    <section 
+    <section
       ref={sectionRef}
-      id="quem-somos" 
+      id="quem-somos"
       className="section-padding relative overflow-hidden"
     >
       {/* Background */}
       <div className="absolute inset-0 bg-gradient-to-b from-background via-secondary/30 to-background" />
-      
+
       {/* Decorative Lines */}
       <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-border to-transparent" />
       <div className="absolute bottom-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-border to-transparent" />
@@ -57,9 +57,9 @@ const AboutSection = () => {
               </div>
 
               <p className="text-lg text-muted-foreground leading-relaxed">
-                A <span className="text-foreground font-semibold">RESTCAR</span> atua de forma 
-                especializada na restituição de veículos apreendidos em processos judiciais, 
-                com foco em apreensões criminais. Nosso trabalho é técnico, jurídico e 
+                A <span className="text-foreground font-semibold">RESTCAR</span> atua de forma
+                especializada na restituição de veículos apreendidos em processos judiciais,
+                com foco em apreensões criminais. Nosso trabalho é técnico, jurídico e
                 estratégico, respeitando rigorosamente a legalidade e a segurança do cliente.
               </p>
 
@@ -70,7 +70,7 @@ const AboutSection = () => {
                   { number: 'Zero', label: 'Burocracia' },
                   { number: 'Total', label: 'Transparência' },
                 ].map((stat, index) => (
-                  <div 
+                  <div
                     key={stat.label}
                     className="text-center p-4 glass-card rounded-xl"
                     style={{ animationDelay: `${index * 0.1}s` }}
@@ -87,52 +87,52 @@ const AboutSection = () => {
             </div>
 
             {/* Right Content - Alert Box */}
-            <div 
+            <div
               className={`${isVisible ? 'animate-fade-up delay-200' : 'opacity-0'}`}
             >
-              <div className="glass-card p-8 rounded-2xl border border-destructive/20 relative overflow-hidden">
+              <div className="glass-card p-8 rounded-2xl border-2 border-destructive/40 bg-destructive/5 relative overflow-hidden shadow-2xl shadow-destructive/10">
                 {/* Glow */}
-                <div className="absolute top-0 right-0 w-40 h-40 bg-destructive/10 rounded-full blur-3xl" />
-                
+                <div className="absolute top-0 right-0 w-64 h-64 bg-destructive/10 rounded-full blur-3xl animate-pulse" />
+
                 <div className="relative z-10">
                   {/* Alert Header */}
-                  <div className="flex items-center gap-4 mb-6">
-                    <div className="w-14 h-14 rounded-xl bg-destructive/20 flex items-center justify-center">
-                      <AlertTriangle className="w-7 h-7 text-destructive" />
+                  <div className="flex items-center gap-5 mb-8">
+                    <div className="w-16 h-16 rounded-2xl bg-red-600 flex items-center justify-center shadow-[0_0_30px_rgba(220,38,38,0.6)] ring-4 ring-red-600/20">
+                      <AlertTriangle className="w-8 h-8 text-white animate-pulse" />
                     </div>
                     <div>
-                      <h3 className="font-display text-xl font-bold text-foreground">
+                      <h3 className="font-display text-2xl font-bold text-foreground">
                         Importante Saber
                       </h3>
-                      <p className="text-sm text-muted-foreground">
+                      <p className="text-base text-destructive font-semibold">
                         O que NÃO fazemos
                       </p>
                     </div>
                   </div>
 
                   {/* Alert Badge */}
-                  <div className="inline-flex items-center gap-2 px-4 py-2 bg-destructive/10 rounded-full mb-6">
-                    <XCircle className="w-4 h-4 text-destructive" />
-                    <span className="text-sm font-semibold text-destructive">
+                  <div className="inline-flex items-center gap-3 px-5 py-3 bg-destructive/10 border border-destructive/20 rounded-xl mb-8 w-full">
+                    <XCircle className="w-5 h-5 text-destructive shrink-0" />
+                    <span className="text-base font-bold text-destructive">
                       Não somos despachantes
                     </span>
                   </div>
 
                   {/* Not Included List */}
-                  <div className="space-y-4">
-                    <p className="text-sm text-muted-foreground font-medium uppercase tracking-wider">
+                  <div className="space-y-5">
+                    <p className="text-sm text-foreground/80 font-bold uppercase tracking-wider border-b border-destructive/20 pb-2">
                       Não realizamos liberação por:
                     </p>
                     <div className="grid gap-3">
                       {notIncluded.map((item) => (
-                        <div 
+                        <div
                           key={item.text}
-                          className="flex items-center gap-4 p-4 bg-secondary/50 rounded-xl"
+                          className="flex items-center gap-4 p-4 bg-background/80 border border-destructive/30 rounded-xl hover:border-destructive/60 transition-colors"
                         >
-                          <div className="w-10 h-10 rounded-lg bg-destructive/10 flex items-center justify-center">
-                            <XCircle className="w-5 h-5 text-destructive" />
+                          <div className="w-10 h-10 rounded-lg bg-destructive/10 flex items-center justify-center shrink-0">
+                            <item.icon className="w-5 h-5 text-destructive" />
                           </div>
-                          <span className="text-foreground font-medium">{item.text}</span>
+                          <span className="text-lg font-semibold text-foreground">{item.text}</span>
                         </div>
                       ))}
                     </div>
