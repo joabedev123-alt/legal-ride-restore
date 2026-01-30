@@ -66,7 +66,7 @@ const ContactSection = () => {
                   className="bg-[#25D366] hover:bg-[#25D366]/90 text-white px-10 py-7 text-lg font-bold tracking-wide rounded-2xl transition-all duration-300 shadow-xl shadow-green-500/20 hover:shadow-green-500/40 hover:scale-105 group w-full sm:w-auto"
                 >
                   <a
-                    href="https://wa.me/5511992232552"
+                    href="https://api.whatsapp.com/send?phone=5511992232552&text=Ol%C3%A1%2C%20gostaria%20de%20fazer%20uma%20an%C3%A1lise%20do%20meu%20caso."
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center justify-center gap-3"

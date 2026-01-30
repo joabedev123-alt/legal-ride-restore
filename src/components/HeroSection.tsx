@@ -93,7 +93,7 @@ const HeroSection = () => {
               className="bg-[#25D366] hover:bg-[#25D366]/90 text-white px-8 py-6 text-base font-bold tracking-wide rounded-xl transition-all duration-300 shadow-lg shadow-green-500/20 hover:shadow-green-500/40 hover:scale-105"
             >
               <a
-                href="https://wa.me/5511992232552"
+                href="https://api.whatsapp.com/send?phone=5511992232552&text=Ol%C3%A1%2C%20preciso%20de%20ajuda%20com%20um%20ve%C3%ADculo%20apreendido."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-3"

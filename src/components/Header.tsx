@@ -94,7 +94,7 @@ const Header = () => {
               className="bg-[#25D366] hover:bg-[#25D366]/90 text-white px-6 py-2.5 rounded-lg font-medium transition-all duration-300 hover:shadow-glow"
             >
               <a
-                href="https://wa.me/5511992232552"
+                href="https://api.whatsapp.com/send?phone=5511992232552&text=Ol%C3%A1%2C%20gostaria%20de%20falar%20com%20um%20especialista."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-2"

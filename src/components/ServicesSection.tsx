@@ -129,7 +129,7 @@ const ServicesSection = () => {
 
                 {/* CTA Button */}
                 <a
-                  href={`https://wa.me/5511992232552?text=${encodeURIComponent(service.message)}`}
+                  href={`https://api.whatsapp.com/send?phone=5511992232552&text=${encodeURIComponent(service.message)}`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="mt-auto inline-flex items-center justify-center gap-2 w-full py-3 px-4 rounded-xl bg-gradient-to-r from-primary to-accent text-white font-bold tracking-wide shadow-lg transition-all duration-300 hover:shadow-glow hover:scale-[1.02] group-hover:from-primary/90 group-hover:to-accent/90"
