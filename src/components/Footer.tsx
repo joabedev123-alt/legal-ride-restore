@@ -126,6 +126,10 @@ const Footer = () => {
                     R. Rubem Braga, 58, Melville Empresarial, Barueri - SP
                     <span className="block text-xs mt-0.5 text-primary">Smart Office Alphaville</span>
                   </p>
+                  <p>
+                    <strong className="text-foreground block mb-1 text-xs">Email</strong>
+                    contatorestcar@gmail.com
+                  </p>
                 </div>
               </div>
 
